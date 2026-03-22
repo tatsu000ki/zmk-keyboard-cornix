@@ -84,7 +84,13 @@
     };
 };
 
+/* 
 /* トラボ動作でMOUSE(=4)を一定時間有効化 */
 &trackball_listener {
     input-processors = <&aml_threshold 4 10000>;
 };
+
+&trackball_listener {
+    status = "okay";
+};
+*/
