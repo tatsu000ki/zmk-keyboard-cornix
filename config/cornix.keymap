@@ -202,7 +202,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        win_layer {
+        FUNCTION {
             display-name = "Windows";
 
             // ------------------------------------------------------------------------------------------------------------
@@ -213,15 +213,15 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&trans    &trans         &trans        &trans         &trans               &trans                  &trans  &trans               &trans         &trans        &trans            &trans
-&trans    &hm_l LCTRL A  &hm_l LALT S  &hm_l LCTRL D  &hm_shift_l LSHFT F  &trans                  &trans  &hm_shift_r RSHFT J  &hm_r RCTRL K  &hm_r RALT L  &hm_r RCTRL SEMI  &trans
-&kp LGUI  &trans         &trans        &trans         &trans               &trans  &trans  &trans  &trans  &trans               &trans         &trans        &trans            &trans
-&none     &none          &none         &trans         &trans               &trans                  &trans  &trans               &trans         &none         &none             &none
+&trans	&kpESC	&kpF7	&kpF8	&kpF9	&kpF12	&kpSLASH	&kpN7	&kpN8	&kpN9	&kpASTRK	&trans		
+&trans	&trans	&kpF4	&kpF5	&kpF6	&kpF11	&kpMINUS	&kpNUMBER_4	&kpN5	&kpNUMBER_6	&kpPLUS	&trans		
+&trans	&trans	&kpF1	&kpF2	&kpF3	&kpF10	&bright_max	&trans	&kpN0	&kpNUMBER_1	&kpNUMBER_2	&kpNUMBER_3	&kpEQUAL	&trans
+&trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans		
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        Symbol_layer {
+        NUM {
             display-name = "Symbols";
 
             // TODO: Some binds are waiting for shifted keycode support.
@@ -233,15 +233,15 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&none  &kp EXCL  &kp AT    &kp HASH  &kp DLLR  &kp PRCNT                  &kp CARET  &kp AMPS      &kp ASTRK  &kp LPAR   &kp RPAR  &kp PIPE
-&none  &none     &kp LBKT  &kp RBKT  &kp LBRC  &kp RBRC                   &kp EQUAL  &kp UNDER     &kp MINUS  &kp PLUS   &kp DQT   &kp SQT
-&none  &none     &kp RBKT  &kp RPAR  &kp PIPE  &kp BSLH   &trans  &trans  &kp FSLH   &kp QUESTION  &kp GRAVE  &kp TILDE  &kp SQT   &none
-&none  &none     &none     &none     &trans    &trans                     &kp TILDE  &trans        &kp GRAVE  &none      &none     &none
+&trans	&kpLS(N7)	&kpAT	&kpLS(MINUS)	&kpMINUS	&kpLS(SEMICOLON)	&kpINTERNATIONAL_1	&kpLS(NUMBER_8)	&kpLS(N9)	&kpEQUAL	&kpPERCENT	&trans		
+&trans	&kpLBKT	&kpSLASH	&kpDOLLAR	&kpSLASH	&kpLS(SQT)	&kpQUESTION	&kpRBKT	&kpBACKSLASH	&kpSQT	&kpSEMICOLON	&trans		
+&trans	&trans	&trans	&kpHASH	&trans	&kpEXCL	&trans	&trans	&kpLS(N6)	&kpLS(RBKT)	&kpLS(BACKSLASH)	&trans	&kpINTERNATIONAL_1	&trans
+&trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans	&trans	&kpLS(INTERNATIONAL_1)	
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
 
-        Mix_layer {
+        ARROW  {
             display-name = "Mix";
 
             // ------------------------------------------------------------------------------------------------------------
@@ -252,10 +252,10 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans  &kp F1  &kp F2  &kp F3   &kp F4  &kp F5                         &kp F6    &kp F7     &kp F8     &kp F9    &kp F10  &kp F11
-&trans  &kp N5  &kp N4  &kp N3   &kp N2  &kp N1                         &kp BSPC  &kp MINUS  &kp EQUAL  &kp PLUS  &kp DQT  &kp F12
-&trans  &kp N6  &kp N7  &kp N8   &kp N9  &kp N0         &trans  &trans  &kp TAB   &kp INS    &kp HOME   &kp END   &trans   &trans
-&none   &none   &none   &kp TAB  &trans  &kp BACKSPACE                  &trans    &trans     &kp N3     &none     &none    &none
+&trans	&alt_tab_hold           	&kp LC(W)  	&kp LC(E)  	&kp LC(R)  	&kp LC(T)                             	&kp LC(Y)         	&kp PAGE_UP     	&kp UP_ARROW      	&kp PAGE_DOWN  	&trans	&trans		
+&trans	&mt LEFT_CONTROL LC(A)  	&kp LC(S)  	&kp LC(D)  	&kp LC(F)  	&kp LC(G)  	&kp LC(LS(TAB))   	&kp LEFT_ARROW  	&kp DOWN_ARROW    	&kp RIGHT      	&kp LC(TAB)			
+&trans	&mt LEFT_SHIFT LC(Z)    	&kp LC(X)  	&kp LC(C)  	&kp LC(V)  	&kp LC(B)  	&kp C_MUTE      	&kp HOME   	&trans            	&kp LG(LEFT)    	&kp LG(UP_ARROW)  	&kp LG(RIGHT)  	&trans	&trans
+&trans  &trans     	&trans     	&trans     	&trans     	&trans          	&kp LANG1  	&kp LC(KP_ENTER)   &trans	&trans	&trans	&trans		
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
