@@ -24,7 +24,7 @@
         device = <&trackball>;
     };
 };
-
+/*
  / {
     aml_threshold: aml_threshold {
         compatible = "zmk,input-processor-temp-layer-threshold";
@@ -36,6 +36,7 @@
         excluded-positions = <18 19 20 10 22 34>;
     };
 };
+*/
 
 &pinctrl {
     spi0_default: spi0_default {
