@@ -89,8 +89,8 @@
 &trackball_listener {
     input-processors = <&aml_threshold 4 10000>;
 };
-
+*/
 &trackball_listener {
     status = "okay";
 };
-*/
+
