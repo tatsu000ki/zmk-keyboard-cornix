@@ -193,10 +193,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp TAB  &kp Q          &kp W         &kp E         &kp R                &kp T                      &kp Y      &kp U                &kp I            &kp O         &kp P             &kp BSLH
-&kp ESC  &hm_l LCTRL A  &hm_l LALT S  &hm_l LGUI D  &hm_shift_l LSHFT F  &kp G                      &kp H      &hm_shift_r RSHFT J  &hm_r RGUI K     &hm_r RALT L  &hm_r RCTRL SEMI  &kp SQT
-&mo 4    &hm_l LGUI Z   &kp X         &kp C         &kp V                &kp B        &none  &none  &kp N      &kp M                &kp COMMA        &kp DOT       &kp FSLH          &kp BACKSPACE
-&none    &none          &none         &lt 6 ESCAPE  &mo 2                &lt 5 SPACE                &kp ENTER  &mo 3                &lt 2 BACKSPACE  &none         &none             &none
+&kp TAB	　　&kp Q	&kp W	&kp E	&kp R	&kp T	&kp Y	&kp U	&lt 5 I	&kp O	&kp P	&kp P		
+&kp LCTRL	&kp A	&kp S	&kp D	&kp F	&kp G	&kp H	&kp J	&lt 5 K	&kp L	&kp ENTER	&kp ENTER		
+&kp LSHFT	&kp Z	&kp X	&kp C	&kp V	&kp B	&mo 6	&none	&kp N	&kp M	&kp COMMA	&kp DOT	&kp SLASH	&none
+&kp LCTRL	&kp LEFT_WIN	&kp LEFT_ALT	&lt_to_layer_0 3 GRAVE	&lt 1 SPACE	&lt_to_layer_0 2 LANG2	&kp TAB	&kp BACKSPACE	&none	&none	&none	&clear_on_tap_panic_on_hold 0 0		
+
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
