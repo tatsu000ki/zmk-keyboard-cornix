@@ -1,3 +1,4 @@
 ---
 include:
   - board: cornix_left
+  - board: cornix_right
