@@ -192,7 +192,7 @@
 &kp TAB    &kp Q         &kp W         &kp E             &kp R        &kp T                           &kp Y    &kp U          &lt 5 I    &kp O    &kp P      &kp P
 &kp LCTRL  &kp A         &kp S         &kp D             &kp F        &kp G                           &kp H    &kp J          &lt 5 K    &kp L    &kp ENTER  &kp ENTER
 &kp LSHFT  &kp Z         &kp X         &kp C             &kp V        &kp B             &mo 6  &none  &kp N    &kp M          &kp COMMA  &kp DOT  &kp SLASH  &none
-&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LANGUAGE_1  &lt 1 SPACE  &lt 2 LANGUAGE_2                &kp TAB  &kp BACKSPACE  &none      &none    &none      &none
+&kp LCTRL  &kp LEFT_WIN  &kp LEFT_ALT  &lt 3 LANGUAGE_1  &lt 1 SPACE  &lt 2 LANGUAGE_2                &kp TAB  &kp BACKSPACE  &kp DEL    &none    &none      &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -250,10 +250,10 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&trans     &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)                     &kp LC(Y)         &kp PAGE_UP       &kp UP_ARROW    &kp PAGE_DOWN  &trans       &trans
-&trans     &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)                     &kp LC(LS(TAB))   &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT      &kp LC(TAB)  &trans 
-&trans     &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &kp C_MUTE  &kp HOME  &trans  &kp LG(LEFT)      &kp LG(UP_ARROW)  &kp LG(RIGHT)   &trans         &trans       &trans
-&trans     &trans     &trans     &trans     &trans     &kp LANG1                     &kp LC(KP_ENTER)  &trans            &trans          &trans         &trans
+&trans  &kp LC(Q)  &kp LC(W)  &kp LC(E)  &kp LC(R)  &kp LC(T)                        &kp LC(Y)        &kp PAGE_UP       &kp UP_ARROW      &kp PAGE_DOWN  &trans       &trans
+&trans  &kp LC(A)  &kp LC(S)  &kp LC(D)  &kp LC(F)  &kp LC(G)                        &kp LC(LS(TAB))  &kp LEFT_ARROW    &kp DOWN_ARROW    &kp RIGHT      &kp LC(TAB)  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(V)  &kp LC(B)  &kp C_MUTE  &kp HOME  &trans           &kp LG(LEFT)      &kp LG(UP_ARROW)  &kp LG(RIGHT)  &trans       &trans
+&trans  &trans     &trans     &trans     &trans     &trans                           &kp LANG1        &kp LC(KP_ENTER)  &trans            &trans         &trans       &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -290,10 +290,10 @@
         KeyPad_layer {
             display-name = "NumPad";
             bindings = <
-&mo 7  &none  &none  &none  &none  &none                  &kp KP_N7        &kp KP_N8        &kp KP_N9        &kp KP_MINUS  &kp KP_MULTIPLY  &none
-&none  &none  &none  &none  &none  &none                  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_N6        &kp KP_PLUS   &kp KP_DIVIDE    &none
-&none  &none  &none  &none  &none  &none  &trans  &trans  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_N3        &none         &none            &none
-&none  &none  &none  &none  &none  &mo 7                  &kp KP_N0        &kp KP_DOT       &kp KP_NUMBER_0  &none         &none            &none
+&none  &none  &none  &none  &none  &none                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
+&none  &none  &none  &none  &none  &none                  &none         &none         &none         &none         &none         &none
+&none  &none  &none  &none  &none  &none  &trans  &trans  &none         &none         &none         &none         &none         &bt BT_CLR
+&none  &none  &none  &none  &none  &none                  &none         &none         &none         &none         &none         &bt BT_CLR_ALL
             >;
         };
 
