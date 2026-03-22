@@ -37,5 +37,5 @@ manifest:
       path: modules/zmk-pmw3610-driver
     - name: github
       url-base: https://github.com
-    self:
+  self:
     path: config
