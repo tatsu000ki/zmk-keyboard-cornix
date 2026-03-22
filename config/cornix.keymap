@@ -147,7 +147,7 @@
         compatible = "zmk,combos";
 
         cb_ltm {
-            bindings = <&kpESC>;
+            bindings = <&kp ESC>;
             key-positions = <2 4>;
             layers = <0 1>;
         };
